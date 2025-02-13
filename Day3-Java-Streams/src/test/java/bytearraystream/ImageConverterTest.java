@@ -13,6 +13,8 @@ public class ImageConverterTest {
 
     @Test
     public void testImageToByteArray() throws IOException {
+
+
         byte[] imageBytes = ImageConverter.imageToByteArray(TEST_SOURCE_PATH);
         assertNotNull(imageBytes, "Byte array should not be null.");
         assertTrue(imageBytes.length > 0, "Byte array should not be empty.");
